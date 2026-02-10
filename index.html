@@ -16,21 +16,22 @@
 
     <nav class="bg-white shadow-md sticky top-0 z-50">
         <div class="max-w-6xl mx-auto px-4 py-3 flex justify-between items-center">
-            <h1 class="text-2xl font-bold text-indigo-600">🎁 혜택알리미</h1>
-            <div class="space-x-6 text-gray-600 font-medium">
-                <a href="#" class="hover:text-indigo-600">오늘의 혜택</a>
-                <a href="#" class="hover:text-indigo-600">정부지원금</a>
-                <a href="#" class="hover:text-indigo-600">맞춤진단</a>
-                <button class="bg-indigo-600 text-white px-4 py-2 rounded-lg text-sm">로그인</button>
+            <a href="index.html"><h1 class="text-2xl font-bold text-indigo-600">🎁 혜택알리미</h1></a>
+            <div class="hidden md:flex space-x-6 text-gray-600 font-medium">
+                <a href="all_benefits.html" class="hover:text-indigo-600">오늘의 혜택</a>
+                <a href="gov_benefits.html" class="hover:text-indigo-600">정부지원금</a>
+                <a href="all_benefits.html" class="hover:text-indigo-600">맞춤진단</a>
+                <button class="bg-indigo-600 text-white px-4 py-2 rounded-lg text-sm hover:bg-indigo-700">로그인</button>
             </div>
+            <button class="md:hidden bg-indigo-600 text-white px-3 py-1.5 rounded-lg text-xs">로그인</button>
         </div>
     </nav>
 
     <header class="gradient-bg text-white py-16 px-4 text-center">
         <h2 class="text-3xl md:text-4xl font-bold mb-4">나에게 딱 맞는 혜택, <br class="md:hidden"> 1초 만에 찾아드려요</h2>
-        <p class="text-indigo-100 mb-8">현재 1,240개의 실시간 혜택이 업데이트 되었습니다.</p>
+        <p class="text-indigo-100 mb-8">현재 1,248개의 실시간 혜택이 업데이트 되었습니다.</p>
         <div class="max-w-2xl mx-auto bg-white rounded-full p-2 flex shadow-xl">
-            <input type="text" placeholder="관심 있는 혜택을 검색해 보세요 (예: 청년수당, 카드할인)" class="flex-grow px-6 py-3 rounded-full text-gray-800 focus:outline-none">
+            <input type="text" placeholder="관심 있는 혜택을 검색해 보세요" class="flex-grow px-6 py-3 rounded-full text-gray-800 focus:outline-none">
             <button class="bg-orange-500 hover:bg-orange-600 text-white px-8 py-3 rounded-full font-bold transition">검색</button>
         </div>
     </header>
@@ -38,74 +39,74 @@
     <main class="max-w-6xl mx-auto px-4 py-12">
         
         <section class="grid grid-cols-4 md:grid-cols-8 gap-4 mb-12">
-            <div class="text-center group cursor-pointer">
-                <div class="bg-white p-4 rounded-2xl shadow-sm group-hover:shadow-md transition mb-2">💰</div>
-                <span class="text-xs text-gray-600">정부지원금</span>
-            </div>
-            <div class="text-center group cursor-pointer">
-                <div class="bg-white p-4 rounded-2xl shadow-sm group-hover:shadow-md transition mb-2">💳</div>
-                <span class="text-xs text-gray-600">카드/금융</span>
-            </div>
-            <div class="text-center group cursor-pointer">
-                <div class="bg-white p-4 rounded-2xl shadow-sm group-hover:shadow-md transition mb-2">🍔</div>
-                <span class="text-xs text-gray-600">외식/쿠폰</span>
-            </div>
-            <div class="text-center group cursor-pointer">
-                <div class="bg-white p-4 rounded-2xl shadow-sm group-hover:shadow-md transition mb-2">🏠</div>
-                <span class="text-xs text-gray-600">주거/월세</span>
-            </div>
-            <div class="text-center group cursor-pointer">
-                <div class="bg-white p-4 rounded-2xl shadow-sm group-hover:shadow-md transition mb-2">📱</div>
-                <span class="text-xs text-gray-600">통신/구독</span>
-            </div>
-            <div class="text-center group cursor-pointer">
-                <div class="bg-white p-4 rounded-2xl shadow-sm group-hover:shadow-md transition mb-2">✈️</div>
-                <span class="text-xs text-gray-600">여행/숙박</span>
-            </div>
-            <div class="text-center group cursor-pointer">
-                <div class="bg-white p-4 rounded-2xl shadow-sm group-hover:shadow-md transition mb-2">🎓</div>
-                <span class="text-xs text-gray-600">교육/자기계발</span>
-            </div>
-            <div class="text-center group cursor-pointer">
-                <div class="bg-white p-4 rounded-2xl shadow-sm group-hover:shadow-md transition mb-2">✨</div>
-                <span class="text-xs text-gray-600">전체보기</span>
-            </div>
+            <a href="gov_benefits.html" class="text-center group">
+                <div class="bg-white p-4 rounded-2xl shadow-sm group-hover:shadow-md group-hover:-translate-y-1 transition mb-2 text-2xl">💰</div>
+                <span class="text-xs text-gray-600 font-medium">정부지원금</span>
+            </a>
+            <a href="finance.html" class="text-center group">
+                <div class="bg-white p-4 rounded-2xl shadow-sm group-hover:shadow-md group-hover:-translate-y-1 transition mb-2 text-2xl">💳</div>
+                <span class="text-xs text-gray-600 font-medium">카드/금융</span>
+            </a>
+            <a href="coupons.html" class="text-center group">
+                <div class="bg-white p-4 rounded-2xl shadow-sm group-hover:shadow-md group-hover:-translate-y-1 transition mb-2 text-2xl">🍔</div>
+                <span class="text-xs text-gray-600 font-medium">외식/쿠폰</span>
+            </a>
+            <a href="housing.html" class="text-center group">
+                <div class="bg-white p-4 rounded-2xl shadow-sm group-hover:shadow-md group-hover:-translate-y-1 transition mb-2 text-2xl">🏠</div>
+                <span class="text-xs text-gray-600 font-medium">주거/월세</span>
+            </a>
+            <a href="subscription.html" class="text-center group">
+                <div class="bg-white p-4 rounded-2xl shadow-sm group-hover:shadow-md group-hover:-translate-y-1 transition mb-2 text-2xl">📱</div>
+                <span class="text-xs text-gray-600 font-medium">통신/구독</span>
+            </a>
+            <a href="travel.html" class="text-center group">
+                <div class="bg-white p-4 rounded-2xl shadow-sm group-hover:shadow-md group-hover:-translate-y-1 transition mb-2 text-2xl">✈️</div>
+                <span class="text-xs text-gray-600 font-medium">여행/숙박</span>
+            </a>
+            <a href="education.html" class="text-center group">
+                <div class="bg-white p-4 rounded-2xl shadow-sm group-hover:shadow-md group-hover:-translate-y-1 transition mb-2 text-2xl">🎓</div>
+                <span class="text-xs text-gray-600 font-medium">교육</span>
+            </a>
+            <a href="all_benefits.html" class="text-center group">
+                <div class="bg-white p-4 rounded-2xl shadow-sm group-hover:shadow-md group-hover:-translate-y-1 transition mb-2 text-2xl">✨</div>
+                <span class="text-xs text-gray-600 font-medium">전체보기</span>
+            </a>
         </section>
 
         <section class="mb-12">
             <div class="flex justify-between items-end mb-6">
                 <h3 class="text-2xl font-bold text-gray-800">🔥 지금 인기 있는 혜택</h3>
-                <a href="#" class="text-indigo-600 text-sm">더보기 ></a>
+                <a href="all_benefits.html" class="text-indigo-600 text-sm font-bold">더보기 ></a>
             </div>
             <div class="grid md:grid-cols-2 lg:grid-cols-3 gap-6">
                 <div class="bg-white border border-gray-100 rounded-2xl p-6 shadow-sm hover:border-indigo-300 transition relative">
-                    <span class="bg-blue-100 text-blue-600 text-xs px-2 py-1 rounded mb-3 inline-block">전국민</span>
+                    <span class="bg-blue-100 text-blue-600 text-xs px-2 py-1 rounded mb-3 inline-block font-bold">전국민</span>
                     <h4 class="text-lg font-bold mb-2 uppercase">2026 에너지 바우처 신청</h4>
                     <p class="text-gray-500 text-sm mb-4">냉난방비 부담을 덜어드리는 에너지 이용권 지급</p>
                     <div class="flex justify-between items-center text-xs text-gray-400 border-t pt-4">
                         <span>📅 D-12 마감</span>
-                        <span class="text-indigo-600 font-bold">무료 확인</span>
+                        <a href="gov_benefits.html" class="text-indigo-600 font-bold">무료 확인</a>
                     </div>
                 </div>
 
                 <div class="bg-indigo-50 border-2 border-indigo-200 rounded-2xl p-6 shadow-sm relative overflow-hidden">
-                    <div class="absolute top-0 right-0 bg-indigo-600 text-white px-3 py-1 text-xs rounded-bl-lg font-bold">PREMIUM</div>
-                    <span class="bg-indigo-200 text-indigo-700 text-xs px-2 py-1 rounded mb-3 inline-block">선착순 한정</span>
-                    <h4 class="text-lg font-bold mb-2">소상공인 이자 환급 가이드</h4>
-                    <p class="text-gray-600 text-sm mb-4">최대 300만원 환급! 신청 서류와 절차를 1분만에 정리해드립니다.</p>
+                    <div class="absolute top-0 right-0 bg-indigo-600 text-white px-3 py-1 text-[10px] rounded-bl-lg font-bold uppercase">Premium</div>
+                    <span class="bg-indigo-200 text-indigo-700 text-xs px-2 py-1 rounded mb-3 inline-block font-bold">선착순 혜택</span>
+                    <h4 class="text-lg font-bold mb-2 text-indigo-900 font-bold">소상공인 이자 환급 가이드</h4>
+                    <p class="text-indigo-700 text-opacity-70 text-sm mb-4">최대 300만원 환급! 신청 서류를 1분만에 정리해드립니다.</p>
                     <div class="flex justify-between items-center border-t border-indigo-100 pt-4">
                         <span class="text-indigo-600 font-bold text-sm">결제 후 열람</span>
-                        <button class="bg-indigo-600 text-white px-3 py-1 rounded text-xs">9,900원 결제</button>
+                        <button onclick="openModal()" class="bg-indigo-600 text-white px-3 py-1 rounded text-xs hover:bg-indigo-700 transition">9,900원 결제</button>
                     </div>
                 </div>
 
                 <div class="bg-white border border-gray-100 rounded-2xl p-6 shadow-sm hover:border-indigo-300 transition">
-                    <span class="bg-green-100 text-green-600 text-xs px-2 py-1 rounded mb-3 inline-block">카드사</span>
-                    <h4 class="text-lg font-bold mb-2 uppercase">신한카드 편의점 50% 캐시백</h4>
-                    <p class="text-gray-500 text-sm mb-4">매주 금요일 GS25에서 결제 시 50% 즉시 할인</p>
+                    <span class="bg-green-100 text-green-600 text-xs px-2 py-1 rounded mb-3 inline-block font-bold">카드사</span>
+                    <h4 class="text-lg font-bold mb-2 uppercase italic">신한카드 편의점 50% 할인</h4>
+                    <p class="text-gray-500 text-sm mb-4">매주 금요일 GS25에서 결제 시 50% 즉시 할인 혜택</p>
                     <div class="flex justify-between items-center text-xs text-gray-400 border-t pt-4">
                         <span>📅 2월 한달간</span>
-                        <span class="text-indigo-600 font-bold">무료 확인</span>
+                        <a href="finance.html" class="text-indigo-600 font-bold">혜택 확인</a>
                     </div>
                 </div>
             </div>
@@ -113,7 +114,7 @@
 
         <section class="bg-gray-900 rounded-3xl p-8 text-white flex flex-col md:flex-row items-center justify-between shadow-2xl">
             <div class="mb-6 md:mb-0">
-                <h3 class="text-2xl font-bold mb-2">프리미엄 알림 구독 🔔</h3>
+                <h3 class="text-2xl font-bold mb-2 font-bold">프리미엄 알림 구독 🔔</h3>
                 <p class="text-gray-400">나에게 맞는 선착순 혜택이 뜨면 카톡으로 즉시 알려드려요.</p>
             </div>
             <div class="flex items-center space-x-4">
@@ -121,7 +122,7 @@
                     <span class="block text-xs text-gray-400 line-through">월 9,900원</span>
                     <span class="text-xl font-bold text-orange-400">월 4,900원</span>
                 </div>
-                <button class="bg-white text-gray-900 px-6 py-3 rounded-xl font-bold hover:bg-gray-100 transition">
+                <button onclick="alert('구독 서비스 준비중입니다!')" class="bg-white text-gray-900 px-6 py-3 rounded-xl font-bold hover:bg-gray-100 transition shadow-lg">
                     구독하기
                 </button>
             </div>
@@ -129,18 +130,44 @@
 
     </main>
 
+    <div id="paymentModal" class="hidden fixed inset-0 bg-black bg-opacity-60 z-[100] flex items-center justify-center p-4">
+        <div class="bg-white rounded-3xl max-w-sm w-full p-8 shadow-2xl">
+            <div class="text-center">
+                <div class="bg-indigo-100 w-16 h-16 rounded-full flex items-center justify-center mx-auto mb-4 text-3xl">💎</div>
+                <h3 class="text-2xl font-bold text-gray-800 mb-2">프리미엄 열람</h3>
+                <p class="text-gray-500 mb-6 text-sm">이자 환급 가이드와 <br>필요 서류 템플릿을 즉시 확인하세요.</p>
+                <div class="bg-gray-50 rounded-2xl p-4 mb-6 text-left">
+                    <div class="flex justify-between mb-2 text-sm text-gray-500"><span>상품 금액</span><span>9,900원</span></div>
+                    <div class="flex justify-between text-indigo-600 font-bold border-t pt-2 mt-2 text-lg"><span>최종 금액</span><span>9,900원</span></div>
+                </div>
+                <button onclick="alert('인앱결제 연동이 필요합니다!')" class="w-full bg-indigo-600 text-white py-4 rounded-2xl font-bold hover:bg-indigo-700 transition mb-3">결제하기</button>
+                <button onclick="closeModal()" class="w-full text-gray-400 text-sm">나중에 하기</button>
+            </div>
+        </div>
+    </div>
+
     <footer class="bg-gray-100 py-12 px-4 border-t">
         <div class="max-w-6xl mx-auto text-center text-gray-500 text-sm">
-            <p class="mb-4 font-bold text-gray-800">혜택알리미</p>
-            <p class="mb-2">각종 공공데이터 및 카드사 API를 기반으로 정보를 제공합니다.</p>
-            <div class="flex justify-center space-x-4 mb-6">
-                <a href="#" class="hover:underline">이용약관</a>
-                <a href="#" class="hover:underline">개인정보처리방침</a>
-                <a href="#" class="hover:underline">고객센터</a>
+            <p class="mb-4 font-bold text-gray-800 text-lg">🎁 혜택알리미</p>
+            <p class="mb-6">본 서비스는 공공데이터 및 브랜드 제휴 정보를 기반으로 제공되는 민간 서비스입니다.</p>
+            <div class="flex justify-center space-x-6 mb-8 text-gray-600 font-medium">
+                <a href="#" class="hover:text-indigo-600">이용약관</a>
+                <a href="#" class="hover:text-indigo-600">개인정보처리방침</a>
+                <a href="#" class="hover:text-indigo-600">고객센터</a>
             </div>
             <p>© 2026 Benefit-Alimi Inc. All rights reserved.</p>
         </div>
     </footer>
 
+    <script>
+        function openModal() {
+            document.getElementById('paymentModal').classList.remove('hidden');
+            document.body.style.overflow = 'hidden';
+        }
+        function closeModal() {
+            document.getElementById('paymentModal').classList.add('hidden');
+            document.body.style.overflow = 'auto';
+        }
+    </script>
 </body>
 </html>
